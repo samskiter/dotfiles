@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Add ARM Toolchain to PATH
+export PATH="/Applications/ARM/bin:$PATH";
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -51,3 +54,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 source ~/bin/git-completion.bash
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Setup mkvirtualenv
+source /opt/homebrew/bin/virtualenvwrapper.sh
