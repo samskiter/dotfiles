@@ -50,6 +50,4 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Git autocomplete
 source ~/bin/git-completion.bash
 
-# Cloudtop instance
-export USER_CONFIG=$HOME/.bash_profile
-export LINUX_HOSTNAME=samduke.c.googler.com
+eval "$(/opt/homebrew/bin/brew shellenv)"
