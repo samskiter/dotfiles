@@ -4,6 +4,8 @@ export PATH="$HOME/bin:$PATH";
 # Add ARM Toolchain to PATH
 export PATH="/Applications/ARM/bin:$PATH";
 
+export PATH="$HOME/.local/bin:$PATH";
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -57,3 +59,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setup mkvirtualenv
 source /opt/homebrew/bin/virtualenvwrapper.sh
+
+# we expect bash completion to be installed
+source $(brew --prefix)/etc/bash_completion
+
+# we expect poetry to be installed
+eval "$(poetry completions bash)"
